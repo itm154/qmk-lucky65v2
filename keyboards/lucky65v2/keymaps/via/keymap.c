@@ -585,7 +585,7 @@ bool im_lkey_process_user(uint16_t keycode, bool pressed) {
 
 bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
     if (host_keyboard_led_state().caps_lock) {
-        rgb_matrix_set_color(38, 0xff, 0xff, 0xff);
+        rgb_matrix_set_color(36, 0xff, 0xff, 0xff);
     }
 
     if ((!battery_chrg_flag) && (!full_flag)) {
@@ -596,7 +596,7 @@ bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
     }
 
     if (confinfo.no_gui) {
-        rgb_matrix_set_color(4, 0xff, 0xff, 0xff);
+        rgb_matrix_set_color(2, 0xff, 0xff, 0xff);
     }
     return true;
 }
